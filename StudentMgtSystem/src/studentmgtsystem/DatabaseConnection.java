@@ -29,7 +29,6 @@ public class DatabaseConnection {
             Class.forName(JDBC_DRIVER);
             
             Connection conn = DriverManager.getConnection(DB_URL, USER,PASS);
-            
             return conn;
             
         }catch(ClassNotFoundException | SQLException e){
