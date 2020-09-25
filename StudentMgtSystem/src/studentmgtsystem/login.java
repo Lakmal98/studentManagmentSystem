@@ -164,9 +164,10 @@ public class login extends javax.swing.JFrame {
             ResultSet rs = stmt.executeQuery(sql);
             
             rs.next();
-            System.out.println(rs.getString(1));
             if(Integer.parseInt(rs.getString(1))==1) {
-                
+                new login().setVisible(true);
+                this.setVisible(false);
+                this.dispose();
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid username or password.Try again!");
                 password.setText("");
