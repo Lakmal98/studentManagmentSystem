@@ -5,9 +5,10 @@
  */
 package studentmgtsystem;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -154,9 +155,29 @@ public class login extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String email = mail.getText();
-        String password = password.getPassword();
+        String pass = String.valueOf(password.getPassword());
         
-        System.out.println(email);
+        String sql = "SELECT COUNT(id) FROM admin WHERE email ='" + email + "' AND password ='" + pass + "' LIMIT 1";
+        
+        try {
+            Statement stmt = conn.createStatement();
+            ResultSet rs = stmt.executeQuery(sql);
+            
+            rs.next();
+            System.out.println(rs.getString(1));
+            if(Integer.parseInt(rs.getString(1))==1) {
+                
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid username or password.Try again!");
+                password.setText("");
+                mail.requestFocusInWindow();
+                mail.selectAll();
+            }
+
+        } catch (SQLException ex) {
+            Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
