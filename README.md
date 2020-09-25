@@ -1,0 +1,2 @@
+# studentManagmentSystem
+RAD Group Project
