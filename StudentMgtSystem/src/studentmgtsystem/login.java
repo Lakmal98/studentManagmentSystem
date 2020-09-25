@@ -5,9 +5,10 @@
  */
 package studentmgtsystem;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -70,7 +71,6 @@ public class login extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\ACER\\Documents\\GitHub\\studentManagmentSystem\\images\\login button.jpg")); // NOI18N
         jButton1.setText("Login");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -78,7 +78,6 @@ public class login extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\ACER\\Documents\\GitHub\\studentManagmentSystem\\images\\button_cancel.png")); // NOI18N
         jButton2.setText("Cancel");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -86,7 +85,7 @@ public class login extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\ACER\\Documents\\GitHub\\studentManagmentSystem\\images\\login image.png")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon("D:\\UCSC\\IS2104_2020 - Rapid Application Development\\GROUP_PROJECT\\studentManagmentSystem\\images\\login image.png")); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -125,7 +124,7 @@ public class login extends javax.swing.JFrame {
                     .addComponent(jLabel2)
                     .addComponent(password, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton1)
                     .addComponent(jButton2))
                 .addGap(30, 30, 30))
@@ -155,7 +154,30 @@ public class login extends javax.swing.JFrame {
     }//GEN-LAST:event_passwordActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        String email = mail.getText();
+        String pass = String.valueOf(password.getPassword());
+        
+        String sql = "SELECT COUNT(id) FROM admin WHERE email ='" + email + "' AND password ='" + pass + "' LIMIT 1";
+        
+        try {
+            Statement stmt = conn.createStatement();
+            ResultSet rs = stmt.executeQuery(sql);
+            
+            rs.next();
+            System.out.println(rs.getString(1));
+            if(Integer.parseInt(rs.getString(1))==1) {
+                
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid username or password.Try again!");
+                password.setText("");
+                mail.requestFocusInWindow();
+                mail.selectAll();
+            }
+
+        } catch (SQLException ex) {
+            Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
