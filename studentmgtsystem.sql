@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 25, 2020 at 12:55 PM
+-- Generation Time: Sep 26, 2020 at 02:54 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.9
 
@@ -34,6 +34,13 @@ CREATE TABLE `admin` (
   `password` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`id`, `name`, `email`, `password`) VALUES
+(1, 'admin1', '1@admin.com', 'admin1');
+
 -- --------------------------------------------------------
 
 --
@@ -45,8 +52,8 @@ CREATE TABLE `student` (
   `stuName` varchar(100) NOT NULL,
   `gender` varchar(10) NOT NULL,
   `stuFatherName` varchar(100) NOT NULL,
-  `dob` date NOT NULL,
-  `class` varchar(10) NOT NULL,
+  `stuClass` varchar(10) NOT NULL,
+  `blood` varchar(11) NOT NULL,
   `city` varchar(50) NOT NULL,
   `contactNumber` int(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -75,7 +82,7 @@ ALTER TABLE `student`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `student`
