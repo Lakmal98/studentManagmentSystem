@@ -75,7 +75,7 @@ public class addStudent extends javax.swing.JFrame {
         jLabel2.setText("Gender");
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel3.setText("Guardian's Name");
+        jLabel3.setText("GuardianName");
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel5.setText("Class");
@@ -84,7 +84,7 @@ public class addStudent extends javax.swing.JFrame {
         jLabel6.setText("City");
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel7.setText("Contact Number");
+        jLabel7.setText("ContactNumber");
 
         stuName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -255,6 +255,20 @@ public class addStudent extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        
+        //9/26 11.13 AM
+        try{
+            stmt = conn.createStatement();
+            String Name = stuName.getText();
+            String Gender = gender.getText();
+            String Blood = (String) blood.getSelectedItem();
+            String GuardianName = stuFatherName.getText();
+            String City = city.getText();
+            String ContactNumber = contactNumber.getText();
+            String Class = stuClass.getText();
+        }catch(Exception e){
+        JOptionPane.showmessageDialog(null, e);
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
