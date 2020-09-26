@@ -137,13 +137,13 @@
                           <EmptySpace max="32767" attributes="0"/>
                           <Component id="jButton2" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="blood" min="-2" max="-2" attributes="0"/>
-                      <Component id="stuName" alignment="0" max="32767" attributes="0"/>
-                      <Component id="gender" alignment="0" max="32767" attributes="0"/>
-                      <Component id="stuFatherName" alignment="0" max="32767" attributes="0"/>
-                      <Component id="stuClass" alignment="0" max="32767" attributes="0"/>
-                      <Component id="city" alignment="0" max="32767" attributes="0"/>
-                      <Component id="contactNumber" alignment="0" min="-2" pref="252" max="-2" attributes="0"/>
+                      <Component id="sBlood" min="-2" max="-2" attributes="0"/>
+                      <Component id="name" alignment="0" max="32767" attributes="0"/>
+                      <Component id="sGender" alignment="0" max="32767" attributes="0"/>
+                      <Component id="fName" alignment="0" max="32767" attributes="0"/>
+                      <Component id="sClass" alignment="0" max="32767" attributes="0"/>
+                      <Component id="sCity" alignment="0" max="32767" attributes="0"/>
+                      <Component id="sConNumber" alignment="0" min="-2" pref="252" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="48" max="32767" attributes="0"/>
               </Group>
@@ -155,37 +155,37 @@
                   <EmptySpace pref="34" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="stuName" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="name" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="gender" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="sGender" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="stuFatherName" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fName" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="stuClass" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="sClass" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="blood" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="sBlood" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="city" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="sCity" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="contactNumber" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="sConNumber" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -246,16 +246,16 @@
             <Property name="text" type="java.lang.String" value="ContactNumber"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="stuName">
+        <Component class="javax.swing.JTextField" name="name">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="stuNameActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nameActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="gender">
+        <Component class="javax.swing.JTextField" name="sGender">
         </Component>
-        <Component class="javax.swing.JTextField" name="stuFatherName">
+        <Component class="javax.swing.JTextField" name="fName">
         </Component>
-        <Component class="javax.swing.JTextField" name="stuClass">
+        <Component class="javax.swing.JTextField" name="sClass">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel8">
           <Properties>
@@ -265,7 +265,7 @@
             <Property name="text" type="java.lang.String" value="Blood"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JComboBox" name="blood">
+        <Component class="javax.swing.JComboBox" name="sBlood">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="8">
@@ -284,12 +284,12 @@
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JTextField" name="city">
+        <Component class="javax.swing.JTextField" name="sCity">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cityActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="sCityActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="contactNumber">
+        <Component class="javax.swing.JTextField" name="sConNumber">
         </Component>
         <Component class="javax.swing.JButton" name="jButton1">
           <Properties>
