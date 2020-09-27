@@ -44,7 +44,7 @@ public class about extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(204, 255, 255));
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.MatteBorder(null), "RAD_GROUP-19", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 24))); // NOI18N
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\ACER\\Documents\\GitHub\\studentManagmentSystem\\images\\about us.jpg")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/studentmgtsystem/about us.jpg"))); // NOI18N
 
         jLabel3.setText("<html>\n<h1 style=\"color:red\">Group Members</h1><br/>\n<h4 style=\"color:blue\">2018/IS/043-LANKMAL E.A.P.D</h4><br/>\n<h4 style=\"color:blue\">2018/IS/067-SAMARASINGHE D.M</h4><br/>\n<h4 style=\"color:blue\">2018/IS/091-WEERARATHNA T.M.P</h4><br/>\n</html>");
 
