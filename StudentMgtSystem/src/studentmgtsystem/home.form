@@ -15,7 +15,7 @@
                   <KeyStroke key="Ctrl+H"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/studentmgtsystem/home.png"/>
+                  <Image iconType="3" name="/studentmgtsystem/Images/home.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Home"/>
               </Properties>
@@ -29,7 +29,7 @@
                   <KeyStroke key="Ctrl+L"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/studentmgtsystem/logout.png"/>
+                  <Image iconType="3" name="/studentmgtsystem/Images/logout.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Logout"/>
               </Properties>
@@ -50,7 +50,7 @@
                   <KeyStroke key="Ctrl+A"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/studentmgtsystem/about.png"/>
+                  <Image iconType="3" name="/studentmgtsystem/Images/about.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="About"/>
               </Properties>
@@ -235,7 +235,7 @@
         <Component class="javax.swing.JLabel" name="jLabel2">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/studentmgtsystem/stu home.png"/>
+              <Image iconType="3" name="/studentmgtsystem/Images/stu home.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="&lt;html&gt; &#xa;&#xa;&lt;h1 style=&quot;color:blue&quot;&gt;Student&lt;br&gt; Management &lt;br&gt; System&lt;/h1&gt;&#xa;&#xa;&lt;/html&gt;"/>
           </Properties>
@@ -246,7 +246,7 @@
               <Color blue="cc" green="cc" red="cc" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/studentmgtsystem/add stu.png"/>
+              <Image iconType="3" name="/studentmgtsystem/Images/add stu.png"/>
             </Property>
           </Properties>
           <Events>
@@ -322,7 +322,7 @@
         <Component class="javax.swing.JButton" name="jButton2">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/studentmgtsystem/do operations.png"/>
+              <Image iconType="3" name="/studentmgtsystem/Images/do operations.png"/>
             </Property>
           </Properties>
           <Events>
@@ -332,7 +332,7 @@
         <Component class="javax.swing.JButton" name="jButton3">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/studentmgtsystem/show students.png"/>
+              <Image iconType="3" name="/studentmgtsystem/Images/show students.png"/>
             </Property>
           </Properties>
           <Events>
@@ -342,7 +342,7 @@
         <Component class="javax.swing.JButton" name="jButton4">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/studentmgtsystem/add admin.png"/>
+              <Image iconType="3" name="/studentmgtsystem/Images/add admin.png"/>
             </Property>
           </Properties>
           <Events>
@@ -352,7 +352,7 @@
         <Component class="javax.swing.JButton" name="jButton5">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/studentmgtsystem/operations admin.png"/>
+              <Image iconType="3" name="/studentmgtsystem/Images/operations admin.png"/>
             </Property>
           </Properties>
           <Events>
@@ -362,7 +362,7 @@
         <Component class="javax.swing.JButton" name="jButton6">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/studentmgtsystem/showadmins.png"/>
+              <Image iconType="3" name="/studentmgtsystem/Images/showadmins.png"/>
             </Property>
           </Properties>
           <Events>
