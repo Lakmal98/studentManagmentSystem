@@ -15,7 +15,7 @@
                   <KeyStroke key="Ctrl+H"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\ACER\Documents\GitHub\studentManagmentSystem\images\home.png"/>
+                  <Image iconType="3" name="/studentmgtsystem/home.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Home"/>
               </Properties>
@@ -29,7 +29,7 @@
                   <KeyStroke key="Ctrl+L"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\ACER\Documents\GitHub\studentManagmentSystem\images\logout.png"/>
+                  <Image iconType="3" name="/studentmgtsystem/logout.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Logout"/>
               </Properties>
@@ -50,7 +50,7 @@
                   <KeyStroke key="Ctrl+A"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\ACER\Documents\GitHub\studentManagmentSystem\images\about.png"/>
+                  <Image iconType="3" name="/studentmgtsystem/about.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="About"/>
               </Properties>
@@ -235,7 +235,7 @@
         <Component class="javax.swing.JLabel" name="jLabel2">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\ACER\Documents\GitHub\studentManagmentSystem\images\stu home.png"/>
+              <Image iconType="3" name="/studentmgtsystem/stu home.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="&lt;html&gt; &#xa;&#xa;&lt;h1 style=&quot;color:blue&quot;&gt;Student&lt;br&gt; Management &lt;br&gt; System&lt;/h1&gt;&#xa;&#xa;&lt;/html&gt;"/>
           </Properties>
@@ -246,7 +246,7 @@
               <Color blue="cc" green="cc" red="cc" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\ACER\Documents\GitHub\studentManagmentSystem\images\add stu.png"/>
+              <Image iconType="3" name="/studentmgtsystem/add stu.png"/>
             </Property>
           </Properties>
           <Events>
@@ -322,7 +322,7 @@
         <Component class="javax.swing.JButton" name="jButton2">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\ACER\Documents\GitHub\studentManagmentSystem\images\do operations.png"/>
+              <Image iconType="3" name="/studentmgtsystem/do operations.png"/>
             </Property>
           </Properties>
           <Events>
@@ -332,7 +332,7 @@
         <Component class="javax.swing.JButton" name="jButton3">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\ACER\Documents\GitHub\studentManagmentSystem\images\show students.png"/>
+              <Image iconType="3" name="/studentmgtsystem/show students.png"/>
             </Property>
           </Properties>
           <Events>
@@ -342,7 +342,7 @@
         <Component class="javax.swing.JButton" name="jButton4">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\ACER\Documents\GitHub\studentManagmentSystem\images\add admin.png"/>
+              <Image iconType="3" name="/studentmgtsystem/add admin.png"/>
             </Property>
           </Properties>
           <Events>
@@ -352,7 +352,7 @@
         <Component class="javax.swing.JButton" name="jButton5">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\ACER\Documents\GitHub\studentManagmentSystem\images\operations admin.png"/>
+              <Image iconType="3" name="/studentmgtsystem/operations admin.png"/>
             </Property>
           </Properties>
           <Events>
@@ -362,7 +362,7 @@
         <Component class="javax.swing.JButton" name="jButton6">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\ACER\Documents\GitHub\studentManagmentSystem\images\showadmins.png"/>
+              <Image iconType="3" name="/studentmgtsystem/showadmins.png"/>
             </Property>
           </Properties>
           <Events>
