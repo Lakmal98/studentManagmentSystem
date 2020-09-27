@@ -1,20 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package studentmgtsystem;
 
-/**
- *
- * @author ACER
- */
-public class home extends javax.swing.JFrame {
+public class Home extends javax.swing.JFrame {
 
-    /**
-     * Creates new form home
-     */
-    public home() {
+    public Home() {
         initComponents();
     }
 
@@ -28,25 +16,25 @@ public class home extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        homeLogo = new javax.swing.JLabel();
+        addStudentBtn = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        managmentStudentBtn = new javax.swing.JButton();
+        showStudentBtn = new javax.swing.JButton();
+        addAdminBtn = new javax.swing.JButton();
+        manageAdminBtn = new javax.swing.JButton();
+        showAdminsBtn = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
-        jMenuItem3 = new javax.swing.JMenuItem();
+        fileMenu = new javax.swing.JMenu();
+        file_home_subMenu = new javax.swing.JMenuItem();
+        file_logout_subMenu = new javax.swing.JMenuItem();
+        aboutMenu = new javax.swing.JMenu();
+        about_about_subMenu = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -54,14 +42,14 @@ public class home extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(204, 255, 255));
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.MatteBorder(null), "Home", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 24))); // NOI18N
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/studentmgtsystem/Images/stu home.png"))); // NOI18N
-        jLabel2.setText("<html> \n\n<h1 style=\"color:blue\">Student<br> Management <br> System</h1>\n\n</html>");
+        homeLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/studentmgtsystem/Images/stu home.png"))); // NOI18N
+        homeLogo.setText("<html> \n\n<h1 style=\"color:blue\">Student<br> Management <br> System</h1>\n\n</html>");
 
-        jButton1.setForeground(new java.awt.Color(204, 204, 204));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/studentmgtsystem/Images/add stu.png"))); // NOI18N
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        addStudentBtn.setForeground(new java.awt.Color(204, 204, 204));
+        addStudentBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/studentmgtsystem/Images/add stu.png"))); // NOI18N
+        addStudentBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                addStudentBtnActionPerformed(evt);
             }
         });
 
@@ -89,38 +77,38 @@ public class home extends javax.swing.JFrame {
         jLabel12.setForeground(new java.awt.Color(102, 102, 102));
         jLabel12.setText("Show Admins");
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/studentmgtsystem/Images/do operations.png"))); // NOI18N
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        managmentStudentBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/studentmgtsystem/Images/do operations.png"))); // NOI18N
+        managmentStudentBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                managmentStudentBtnActionPerformed(evt);
             }
         });
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/studentmgtsystem/Images/show students.png"))); // NOI18N
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        showStudentBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/studentmgtsystem/Images/show students.png"))); // NOI18N
+        showStudentBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                showStudentBtnActionPerformed(evt);
             }
         });
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/studentmgtsystem/Images/add admin.png"))); // NOI18N
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        addAdminBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/studentmgtsystem/Images/add admin.png"))); // NOI18N
+        addAdminBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                addAdminBtnActionPerformed(evt);
             }
         });
 
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/studentmgtsystem/Images/operations admin.png"))); // NOI18N
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        manageAdminBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/studentmgtsystem/Images/operations admin.png"))); // NOI18N
+        manageAdminBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                manageAdminBtnActionPerformed(evt);
             }
         });
 
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/studentmgtsystem/Images/showadmins.png"))); // NOI18N
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        showAdminsBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/studentmgtsystem/Images/showadmins.png"))); // NOI18N
+        showAdminsBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                showAdminsBtnActionPerformed(evt);
             }
         });
 
@@ -131,9 +119,6 @@ public class home extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(175, 175, 175)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 312, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(54, 54, 54)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -141,110 +126,110 @@ public class home extends javax.swing.JFrame {
                                 .addComponent(jLabel10))
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(addStudentBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGap(75, 75, 75))
                                 .addGroup(jPanel1Layout.createSequentialGroup()
                                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(jLabel4)
-                                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(addAdminBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGap(56, 56, 56))))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(jPanel1Layout.createSequentialGroup()
+                                    .addGap(8, 8, 8)
+                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(manageAdminBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                                        .addComponent(managmentStudentBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGap(69, 69, 69))
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(jLabel5)
+                                    .addGap(56, 56, 56)))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel11)
-                                .addGap(92, 92, 92)
-                                .addComponent(jLabel12))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(8, 8, 8)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(69, 69, 69))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel5)
-                                        .addGap(56, 56, 56)))
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jButton6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jLabel6))
-                                        .addGap(10, 10, 10)))))))
-                .addContainerGap(64, Short.MAX_VALUE))
+                                .addGap(67, 67, 67)))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel12)
+                            .addComponent(showStudentBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel6)
+                            .addComponent(showAdminsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(175, 175, 175)
+                        .addComponent(homeLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 312, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(66, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(homeLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(73, 73, 73)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(8, 8, 8)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel12)
-                                .addComponent(jLabel11))
-                            .addComponent(jLabel10)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(managmentStudentBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(showStudentBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(addStudentBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel4)
                             .addComponent(jLabel6)
                             .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(74, 74, 74)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(manageAdminBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addComponent(addAdminBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(showAdminsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(7, 7, 7)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel11)
+                            .addComponent(jLabel10)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel12)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jMenu1.setText("File");
+        fileMenu.setText("File");
 
-        jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_H, java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/studentmgtsystem/Images/home.png"))); // NOI18N
-        jMenuItem1.setText("Home");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        file_home_subMenu.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_H, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        file_home_subMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/studentmgtsystem/Images/home.png"))); // NOI18N
+        file_home_subMenu.setText("Home");
+        file_home_subMenu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                file_home_subMenuActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem1);
+        fileMenu.add(file_home_subMenu);
 
-        jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_L, java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/studentmgtsystem/Images/logout.png"))); // NOI18N
-        jMenuItem2.setText("Logout");
-        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+        file_logout_subMenu.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_L, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        file_logout_subMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/studentmgtsystem/Images/logout.png"))); // NOI18N
+        file_logout_subMenu.setText("Logout");
+        file_logout_subMenu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem2ActionPerformed(evt);
+                file_logout_subMenuActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem2);
+        fileMenu.add(file_logout_subMenu);
 
-        jMenuBar1.add(jMenu1);
+        jMenuBar1.add(fileMenu);
 
-        jMenu2.setText("About");
+        aboutMenu.setText("About");
 
-        jMenuItem3.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/studentmgtsystem/Images/about.png"))); // NOI18N
-        jMenuItem3.setText("About");
-        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+        about_about_subMenu.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        about_about_subMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/studentmgtsystem/Images/about.png"))); // NOI18N
+        about_about_subMenu.setText("About");
+        about_about_subMenu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem3ActionPerformed(evt);
+                about_about_subMenuActionPerformed(evt);
             }
         });
-        jMenu2.add(jMenuItem3);
+        aboutMenu.add(about_about_subMenu);
 
-        jMenuBar1.add(jMenu2);
+        jMenuBar1.add(aboutMenu);
 
         setJMenuBar(jMenuBar1);
 
@@ -263,125 +248,90 @@ public class home extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        // TODO add your handling code here:
+    private void file_home_subMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_file_home_subMenuActionPerformed
         setVisible(false);
-        home object = new home();
-        object.setVisible(true);
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+        new Home().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_file_home_subMenuActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+    private void addStudentBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addStudentBtnActionPerformed
         setVisible(false);
-        addStudent object = new addStudent();
-        object.setVisible(true);
-    }//GEN-LAST:event_jButton1ActionPerformed
+        new AddStudent().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_addStudentBtnActionPerformed
 
-    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
-        // TODO add your handling code here:
+    private void about_about_subMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_about_about_subMenuActionPerformed
         setVisible(false);
-        about object = new about();
-        object.setVisible(true);
-    }//GEN-LAST:event_jMenuItem3ActionPerformed
+        new About().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_about_about_subMenuActionPerformed
 
-    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        // TODO add your handling code here:
+    private void file_logout_subMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_file_logout_subMenuActionPerformed
         setVisible(false);
-        login object = new login();
-        object.setVisible(true);
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
+        new Login().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_file_logout_subMenuActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+    private void managmentStudentBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_managmentStudentBtnActionPerformed
         setVisible(false);
-        studentCRUD object = new studentCRUD();
-        object.setVisible(true);
-    }//GEN-LAST:event_jButton2ActionPerformed
+        new StudentCRUD().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_managmentStudentBtnActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-        //nw
+    private void showStudentBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_showStudentBtnActionPerformed
         setVisible(false);
-        showStudent object = new showStudent();
-        object.setVisible(true);
-    }//GEN-LAST:event_jButton3ActionPerformed
+        new ShowStudent().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_showStudentBtnActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
+    private void addAdminBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addAdminBtnActionPerformed
         setVisible(false);
-        addAdmin object = new addAdmin();
-        object.setVisible(true);
-    }//GEN-LAST:event_jButton4ActionPerformed
+        new AddAdmin().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_addAdminBtnActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
+    private void manageAdminBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manageAdminBtnActionPerformed
+       setVisible(false);
+       new AdminCRUD().setVisible(true);
+       this.dispose();
+    }//GEN-LAST:event_manageAdminBtnActionPerformed
+
+    private void showAdminsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_showAdminsBtnActionPerformed
         setVisible(false);
-        adminCRUD object = new adminCRUD();
-        object.setVisible(true);
-    }//GEN-LAST:event_jButton5ActionPerformed
+        new ShowAdmin().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_showAdminsBtnActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // TODO add your handling code here:
-        setVisible(false);
-        showAdmin object = new showAdmin();
-        object.setVisible(true);
-    }//GEN-LAST:event_jButton6ActionPerformed
-
-    /**
-     * @param args the command line arguments
-     */
+   
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new home().setVisible(true);
+                new Home().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
+    private javax.swing.JMenu aboutMenu;
+    private javax.swing.JMenuItem about_about_subMenu;
+    private javax.swing.JButton addAdminBtn;
+    private javax.swing.JButton addStudentBtn;
+    private javax.swing.JMenu fileMenu;
+    private javax.swing.JMenuItem file_home_subMenu;
+    private javax.swing.JMenuItem file_logout_subMenu;
+    private javax.swing.JLabel homeLogo;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton manageAdminBtn;
+    private javax.swing.JButton managmentStudentBtn;
+    private javax.swing.JButton showAdminsBtn;
+    private javax.swing.JButton showStudentBtn;
     // End of variables declaration//GEN-END:variables
 }
