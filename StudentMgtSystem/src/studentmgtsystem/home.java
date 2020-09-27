@@ -54,7 +54,7 @@ public class home extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(204, 255, 255));
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.MatteBorder(null), "Home", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 24))); // NOI18N
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\ACER\\Documents\\GitHub\\studentManagmentSystem\\images\\stu home.png")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/studentmgtsystem/stu home.png"))); // NOI18N
         jLabel2.setText("<html> \n\n<h1 style=\"color:blue\">Student<br> Management <br> System</h1>\n\n</html>");
 
         jButton1.setForeground(new java.awt.Color(204, 204, 204));

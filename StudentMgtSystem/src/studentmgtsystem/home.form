@@ -235,7 +235,7 @@
         <Component class="javax.swing.JLabel" name="jLabel2">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\ACER\Documents\GitHub\studentManagmentSystem\images\stu home.png"/>
+              <Image iconType="3" name="/studentmgtsystem/stu home.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="&lt;html&gt; &#xa;&#xa;&lt;h1 style=&quot;color:blue&quot;&gt;Student&lt;br&gt; Management &lt;br&gt; System&lt;/h1&gt;&#xa;&#xa;&lt;/html&gt;"/>
           </Properties>
